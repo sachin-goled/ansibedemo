@@ -1,0 +1,15 @@
+---
+- name: Launching the AWS Instance
+  hosts: localhost
+  tasks:
+         - name: Launch the AWS Instance
+           ec2:
+                key_name: demo
+                region: us-east-1
+                instance_type: t2.micro
+                image: ami-0742b4e673072066f
+                count: 2
+                vpc_subnet_id: subnet-0f15073377300f8d7
+                assign_public_ip: yes
+                aws_access_key: AKIA4XX4NN27NUBTLTWU
+                aws_secret_key: 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
