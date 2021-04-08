@@ -1,0 +1,11 @@
+--- 
+  - name: Stop the Ec2 Instance 
+    hosts: localhost 
+    tasks: 
+    - name: Stop the Ec2 Instance 
+      ec2: 
+            instance_ids: i-0dc36572932eabe72, i-070474c5c1f8b23d1, i-04283a87bbb04d2d5, i-038d3178f01f4ac1c
+            region: us-east-1 
+            state: stopped 
+            aws_access_key: AKIA4XX4NN27NUBTLTWU
+            aws_secret_key: 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
