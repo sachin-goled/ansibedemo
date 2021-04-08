@@ -4,7 +4,7 @@
   tasks:
          - name: Launch the AWS Instance
            ec2:
-                key_name: demo
+                key_name: Demo
                 region: us-east-1
                 instance_type: t2.micro
                 image: ami-0742b4e673072066f
